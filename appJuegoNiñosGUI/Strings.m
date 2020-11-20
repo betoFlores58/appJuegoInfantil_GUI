@@ -37,6 +37,7 @@ rana = [NSImage imageNamed:@""];*/
 }
 
 - (IBAction)btnAdivina:(id)sender {
+    
     /*NSImage *perro = [NSImage alloc];
     _imageAnimal = [NSImageView alloc];
     [_imageAnimal setImage:[NSImage imageNamed:@"perro.jpg"]];*/
