@@ -24,7 +24,7 @@
 		9A8D84F02560E8E300F33820 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A8D84F22560E8E300F33820 /* appJuegoNin_osGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = appJuegoNin_osGUI.entitlements; sourceTree = "<group>"; };
 		9A8D84F82560EEB700F33820 /* Strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
-		9A8D84F92560EEB700F33820 /* Strings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; };
+		9A8D84F92560EEB700F33820 /* Strings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

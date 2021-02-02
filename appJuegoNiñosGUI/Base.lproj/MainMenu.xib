@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.3"/>
+        <capability name="System colors introduced in macOS 10.13" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -683,14 +684,14 @@
         <window title="appJuegoNiñosGUI" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="396"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="EiT-Mj-1SZ" customClass="NSImageView">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="396"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbp-Vl-1vL">
-                        <rect key="frame" x="12" y="229" width="89" height="32"/>
+                        <rect key="frame" x="12" y="265" width="89" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="START.!" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1oB-ib-cCs">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -701,7 +702,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLS-hi-1Cr">
-                        <rect key="frame" x="20" y="289" width="440" height="51"/>
+                        <rect key="frame" x="20" y="325" width="440" height="51"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="GUESS THE ANIMAL" drawsBackground="YES" id="vhV-Hf-3uP">
                             <font key="font" size="39" name="ArialRoundedMTBold"/>
@@ -710,7 +711,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grn-aa-6hW">
-                        <rect key="frame" x="49" y="98" width="148" height="16"/>
+                        <rect key="frame" x="49" y="134" width="148" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Which animal is.?" id="KeI-G6-RSe">
                             <font key="font" size="15" name="HelveticaNeue"/>
@@ -718,24 +719,12 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxx-Rc-Q5c">
-                        <rect key="frame" x="188" y="98" width="105" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Utn-nG-HPZ">
-                            <font key="font" size="13" name="HelveticaNeue-Bold"/>
-                            <color key="textColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <action selector="txtRespuesta:" target="pgi-qv-yYo" id="jvo-Yk-0UO"/>
-                        </connections>
-                    </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mvu-Vt-9h2">
-                        <rect key="frame" x="295" y="89" width="140" height="32"/>
+                        <rect key="frame" x="306" y="126" width="140" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Send Answer" bezelStyle="rounded" image="NSFollowLinkFreestandingTemplate" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="79h-BA-dXA">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="message"/>
+                            <font key="font" metaFont="system"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
 DQ
 </string>
@@ -746,7 +735,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2W-qR-ZJT">
-                        <rect key="frame" x="370" y="13" width="94" height="32"/>
+                        <rect key="frame" x="352" y="6" width="94" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="SALIR" bezelStyle="rounded" image="NSStatusUnavailable" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nTj-Jk-WBo">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -757,17 +746,17 @@ DQ
                         </connections>
                     </button>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vh-D6-GfJ">
-                        <rect key="frame" x="11" y="7" width="48" height="48"/>
+                        <rect key="frame" x="11" y="43" width="48" height="48"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="mk7-Kq-u7E"/>
                     </imageView>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acn-UF-mMe">
-                        <rect key="frame" x="67" y="7" width="48" height="48"/>
+                        <rect key="frame" x="67" y="43" width="48" height="48"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="dNx-Gt-n8b"/>
                     </imageView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBT-6X-SEN" colorLabel="IBBuiltInLabel-Red">
-                        <rect key="frame" x="406" y="228" width="40" height="32"/>
+                        <rect key="frame" x="406" y="264" width="40" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSRefreshTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ORh-cl-ZnV">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -779,19 +768,63 @@ DQ
                         </connections>
                     </button>
                     <imageView focusRingType="exterior" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cTr-bz-znp">
-                        <rect key="frame" x="184" y="150" width="112" height="106"/>
+                        <rect key="frame" x="184" y="186" width="112" height="106"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" focusRingType="exterior" alignment="left" imageScaling="proportionallyDown" id="zDH-aO-Yhh"/>
                     </imageView>
+                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1m5-0W-u16">
+                        <rect key="frame" x="174" y="93" width="132" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="You can find them in:" id="2Og-hD-TRI">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxx-Rc-Q5c">
+                        <rect key="frame" x="191" y="134" width="105" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Utn-nG-HPZ">
+                            <font key="font" size="13" name="HelveticaNeue-Bold"/>
+                            <color key="textColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="txtRespuesta:" target="pgi-qv-yYo" id="jvo-Yk-0UO"/>
+                        </connections>
+                    </textField>
+                    <levelIndicator verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z36-4m-0MT">
+                        <rect key="frame" x="20" y="198" width="75" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <levelIndicatorCell key="cell" alignment="left" maxValue="3" id="YJ3-DH-lKG"/>
+                        <color key="fillColor" name="findHighlightColor" catalog="System" colorSpace="catalog"/>
+                    </levelIndicator>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BIM-KI-9WV">
+                        <rect key="frame" x="18" y="224" width="70" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Difficulty:" id="vtU-Ha-VSG">
+                            <font key="font" size="12" name="HelveticaNeue"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView focusRingType="exterior" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XhR-67-Rcm">
+                        <rect key="frame" x="202" y="20" width="82" height="51"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" focusRingType="exterior" alignment="left" imageScaling="proportionallyDown" id="dj5-9y-rcA"/>
+                    </imageView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="140" y="-120"/>
+            <point key="canvasLocation" x="140" y="-110"/>
         </window>
         <customObject id="pgi-qv-yYo" customClass="Strings">
             <connections>
                 <outlet property="imageAnimal" destination="cTr-bz-znp" id="b4W-gJ-RHV"/>
+                <outlet property="imagePaises" destination="XhR-67-Rcm" id="eyf-Ew-qMP"/>
                 <outlet property="imageWrong1" destination="1vh-D6-GfJ" id="bid-U6-2oc"/>
                 <outlet property="imageWrong2" destination="acn-UF-mMe" id="X9H-vQ-Ohh"/>
+                <outlet property="lblDificulty" destination="Z36-4m-0MT" id="4iv-iQ-QpG"/>
+                <outlet property="txtPais" destination="1m5-0W-u16" id="HsA-Cp-WY5"/>
                 <outlet property="txtRespuesta" destination="qxx-Rc-Q5c" id="t8L-vs-x4o"/>
             </connections>
         </customObject>

@@ -14,11 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Strings : NSObject
 
+@property (weak) IBOutlet NSLevelIndicator *lblDificulty;
+
 @property (retain) IBOutlet NSImageView *imageAnimal;
 @property (retain) IBOutlet NSImageView *imageWrong1;
 @property (retain) IBOutlet NSImageView *imageWrong2;
+@property (retain) IBOutlet NSImageView *imagePaises;
 
 @property (weak) IBOutlet NSTextField *txtRespuesta;
+@property (weak) IBOutlet NSTextField *txtPais;
 
 - (IBAction)btnRespuesta:(id)sender;
 - (IBAction)btnAdivina:(id)sender;
